@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 20px;
+}
+
+body {
+	font-family: 'Libre Baskerville', serif;
+}
+
+hr {
+	background: #fff;
+}
+
+.container {
+	max-width: 1600px;
+}
+
+.sub-container {
+	width: 70%;
+}
+
+.brand {
+	margin-bottom: 50px;
+}
+
+.section {
+	padding: 100px 0;
+	background: #444;
+	color: #fff;
+	transition: background 0.5s;
+}
+
+.intro-head {
+	font-size: 400%;
+	margin: 50px 0;
+}
+
+.intro-p {
+	font-size: 200%;
+	color: #bbb;
+}
+
+.work-links li {
+	list-style: none;
+	margin-bottom: 50px;
+}
+
+.work-links li h1 {
+	font-size: 350%;
+}
+
+.links:link,
+.links:visited {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 5px;
+	transition: border-bottom 0.5s, color 0.5s;
+}
+
+.links:hover {
+	color: #aaa;
+	border-bottom: 1px solid transparent;
+}
+
+.bio-head {
+	margin-top: 60px;
+	font-size: 250%;
+}
+
+.bio-body {
+	font-size: 200%;
+	color: #bbb;
+}
+
+.copyright {
+	color: #aaa;
+}
+
+.hover-pic {
+	position: fixed;
+	top: 25%;
+	left: 35%;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.hover-pic.hovered {
+	opacity: 1;
+}
+
+.first-section {
+	animation-name: fadein;
+	animation-duration: 1s;
+}
+
+.section-works,
+.section-bio,
+.section-contact {
+	opacity: 0;
+}
+
+.animate {
+	animation-name: fadein;
+	animation-duration: 1s;
+	opacity: 1;
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+		margin-top: 100px;
+	}
+
+	100% {
+		opacity: 1;
+		margin-top: 0;
+	}
+}
